@@ -1,0 +1,147 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+
+<section id="products">
+    <div class="bg-products">
+        <div class="dark-overlay">
+            {% include '$navbar.html' %}
+            <div class="container h-100">
+                <div class="row justify-content-center align-items-center h-100">
+                    <div class="container">
+                        <div class="info-tests text-center text-white">
+                            <h2>NUESTROS PRODUCTOS Y SERVICIOS</h2>
+                            <div class="footer-bg d-flex justify-content-between align-items-center">
+                                <div class="left">
+                                    <a href="{% url 'index' %}">Home /</a>
+                                </div>
+                                <div class="right">
+                                    <a href="{% url 'services' %}">Página siguiente</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    {% comment %} Productos and services description {% endcomment %}
+
+    <div class="products-description">
+        <div class="container h-100">
+            <div class="row justify-content-center-align-items-center h-100">
+                <div class="col-md-4 text-center mb-md-0 mb-5">
+                    <img src="{% static 'img/prueba_logo.png' %}" class="img-fluid col-8" alt="">
+                    <h4>PRUEBA RÁPIDA O SEROLOGICA</h4>
+                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#serologica">Ver más</button>
+                </div>
+                <div class="col-md-4 text-center mb-md-0 mb-5">
+                    <img src="{% static 'img/prueba_logo.png' %}" class="img-fluid col-8" alt="">
+                    <h4>PRUEBA PCR</h4>
+                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pcr">Ver más</button>
+                </div>
+                <div class="col-md-4 text-center mb-md-0 mb-5">
+                    <img src="{% static 'img/prueba_logo.png' %}" class="img-fluid col-8" alt="">
+                    <h4>PROGRAMACION DE TAMISAJE PARA EMPRESAS</h4>
+                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#tamisaje">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="serologica" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">PRUEBA RÁPIDA O SEROLOGICA</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Examen ágil y rápido ó Serológico.</li>
+                    <li>Cuenta con la aprobación de la Unión Europea -UE</li>
+                    <li>Declaración de conformidad expedida por la Comunidad Económica Europea -CEE.</li>
+                    <li>Certificación aprobada por la Dirección de Sanidad de la Policía Nacional.</li>
+                    <li>Certificación validada y aprobada por el Instituto Nacional de Salud -INS.</li>
+                    <li>Prueba autorizada para ser realizada sin restricción por el Ministerio de Salud de Francia.</li>
+                    <li>Certificada y con registro del Instituto Nacional de Vigilancia de Medicamentos y Alimentos, -INVIMA.</li>
+                    <li>Presentación por caja de cincuenta (50) unidades (pruebas).</li>
+                    <li>Lee y analiza en 25 minutos</li>
+                    <li>La mejor relación costo / calidad.</li>
+                    <li>Precios especiales por volumen para empresas.</li>
+                </ul>                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="pcr" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">PRUEBA PCR</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Prueba PCR de origen europeo (Reino Unido).</li>
+                    <li>Aprobado por la Agencia de Administración de Alimento y Medicamentos de los Estados Unidos de América (Food and Drug Administration - FDA).</li>
+                    <li>Cuenta con la aprobación de la Unión Europea -UE.</li>
+                    <li>Reconocido por la Organización Mundial de la Salud -OMS.</li>
+                    <li>Presentación en caja por noventa y seis (96) unidades</li>
+                    <li>Empaquetamiento liofilizado para almacenamiento y transporte.</li>
+                    <li>Sin custodia de cadena de frío para movilización y deposito.</li>
+                    <li>Muestras recolectadas y procesadas por personal certificado y calificado.</li>
+                    <li>Utilizadas en Estados Unidos, Unión Europea, Reino Unido, México y otros países.</li>
+                    <li>Certificada y con registro del Instituto Nacional de Vigilancia de Medicamentos y Alimentos, -INVIMA.</li>
+                    <li>Avalados y certificados por la Universidad Nacional de Colombia y la Corporación Colombiana de Investigación Agropecuaria -AGROSAVIA.</li>
+                    <li>Distribuidor exclusivo para Colombia</li>
+                </ul>                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="tamisaje" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tamisaje">PROGRAMACION DE TAMISAJE PARA EMPRESAS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>La compañía utiliza una Prueba Rápida o Prueba Reacción en Cadena de la Polimerasa -PCR, para detectar a los empleados que pueden estar infectados con COVIT-19 temprano.
+                Nuestros paquetes de negocios 360 junto a nuestras IPS aliadas incluyen:</p>
+                <p>Nuestros paquetes 360 para empresas incluyen:</p>
+                <ul>
+                    <li>Muestreo realizado profesionales autorizados por la entidad ejecutora.</li>
+                    <li>Prueba Rápida o Prueba Reacción en Cadena de la Polimerasa -PCR.</li>
+                    <li>Análisis y entrega resultados por parte de nuestras IPS aliadas</li>
+                </ul>                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+

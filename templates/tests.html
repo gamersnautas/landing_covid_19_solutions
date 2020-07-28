@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+    <section id="tests">
+        <div class="bg-tests">
+            <div class="dark-overlay">
+                {% include '$navbar.html' %}
+                <div class="container h-100">
+                    <div class="row justify-content-center align-items-center h-100">
+                        <div class="container">
+                            <div class="info-tests text-center text-white">
+                                <h2>DESCRIPCIÓN DE PRUEBAS RÁPIDAS</h2>
+                                <div class="footer-bg d-flex justify-content-between align-items-center">
+                                    <div class="left">
+                                        <a href="{% url 'index' %}">Home /</a>
+                                    </div>
+                                    <div class="right">
+                                        <a href="{% url 'products' %}">Página siguiente</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% comment %} Description {% endcomment %}
+
+    <div class="tests-description">
+        <div class="container">
+            <h4>PRUEBAS RÁPIDAS</h4>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-timeline">
+                        <a href="#" class="timeline">
+                            <div class="timeline-icon"><i class="fas fa-medkit"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">PRUEBA RÁPIDA SARS-COV-2 GM</h3>
+                                <p class="description">
+                                    Pruebas Rápidas SARS-COV-2 GM ó Serológica de Anticuerpos; Prueba Rápida de SARS-CoV-2 IgG / IgM es un inmunoensayo cromatográfico rápido para la detección cualitativa de anticuerpos IgG e IgM para el Síndrome Respiratorio Agudo Severo Coronavirus 2 (SARS-CoV-2) en humanos de sangre entera, suero y plasma como una ayuda en diagnóstico de la infección Coronavirus. Se utiliza una combinación de CoV de SARS 2-antígenos recombinantes conjugados con oro coloidal, IgG antihumano, anti-IgM humana, IgG de conejo conjugado de oro y de cabra anti-IgG de conejo para detectar selectivamente anticuerpos IgG e IgM para el SARS-CoV-2 en sangre entera, suero o plasma.
+                                    La prueba se realiza mediante la aplicación de la sangre entera, suero o plasma a la muestra bien del casete y observando la formación de líneas de color.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="timeline">
+                            <div class="timeline-icon"><i class="fas fa-syringe"></i></div>
+                            <div class="timeline-content">
+                                <h3 class="title">PRUEBAS CONFIRMATORIAS MOLECULAR PCR</h3>
+                                <p class="description">
+                                    Prueba por biología molecular que se realiza mediante la extracción, amplificación y detección del material genético del virus (ARN viral).
+                                    La PCR es una técnica que sirve para amplificar un fragmento de ácido nucleico; su utilidad es que tras la amplificación resulta mucho más fácil identificar, con una probabilidad muy alta, virus o bacterias causantes de una enfermedad, teniendo en cuenta esto la empresa GENESIG formuló el kit para la detección del coronavirus (COVID-19) CE IVD, este permite una detección rápida, específica, confiable y segura del ácido nucleico del coronavirus (COVID-19) mediante la técnica denominada PCR en tiempo real, este kit no tiene interferencia con los coronavirus anteriores como el SARS o el MERS puesto que fue creado con los mayores estándares de calidad. El kit contiene los reactivos liofilizados para mejorar su rendimiento después del transporte por lo cual no necesita una cadena de frío para ser llevado hasta el laboratorio donde se utilizará y su almacenamiento puede ser a temperatura ambiente antes de utilizarse.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

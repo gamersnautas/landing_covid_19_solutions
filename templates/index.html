@@ -1,0 +1,131 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+
+<section id="home">
+    <div class="bg-home">
+        <div class="bg-overlay">
+            {% include '$navbar.html' %}
+            <div class="container h-100">
+                <div class="row justify-content-center align-items-center h-100">
+                    <div class="col-md-6 col-10">
+                        <div class="caption">
+                            <img src="{% static 'img/logo.png' %}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</section>
+
+<section id="about-us">
+    <div class="container-fluid">
+        <div class="info-about justify-content-center text-center">
+            <h2 class="mb-5">QUIENES SOMOS</h2>
+            <p>
+            Somos una empresa comercializadora enfocada en realizar ejercicios de vigilancia epidemiológica. Trabajamos   junto con IPS y EPS en todo lo relacionado con las pruebas rápidas PCR y Antígenos.  
+            Estas han sido certificadas por las entidades de control y vigilancia en temas de salud a nivel nacional como el Instituto Nacional de Vigilancia de Medicamentos y Alimentos, - INVIMA y el Instituto Nacional de Salud, - INS; a nivel mundial las pruebas que manejamos son reconocidas por la Comunidad Económica Europea, CEE.
+            Hemos establecido alianzas estratégicas con Entidades Prestadoras de Salud (EPS), Institutos Prestadores de Salud (IPS), y laboratorios clínicos aprobados y debidamente autorizados y certificados por los organismos encargados de su vigilancia en todo el territorio nacional para realizar, procesar y analizar los tipos de priebas antes citados. 
+            En base a nuestra experiencia, brindamos servicios de evaluación de programas para empresas en toda Colombia. Brindamos soluciones para empresas vinculadas al area de la salud en la vigilancia de epidemias y más.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container h-100">
+        <h2 class="text-center">COMENTANOS TU INQUIETUD</h2>
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12">
+                <form action="{% url 'sendEmail' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="">Nombre y Apellido:</label>
+                        <input type="text" id="name" name="name" class="form-control">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Edad</label>
+                                <input type="text" id="age" name="age" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Ciudad</label>
+                                <input type="text" id="city" name="city" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Barrio</label>
+                                <input type="text" id="neighborhood" name="neighborhood" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Teléfono</label>
+                                <input type="text" id="phone" name="phone" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="text" class="form-control" name="email" id="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mensaje</label>
+                        <textarea class="form-control" name="message" id="message" cols="30" rows="5"></textarea>
+                    </div>
+                    <button class="btn btn-primary btn-lg">Envíar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="offices">
+    <div class="fixed-background">
+        <div class="container-fluid">
+            <div class="row dark text-center justify-content-center">
+            <div class="col-12">
+                <h3 class="heading heading-resources mb-5">CONTACTA CON NOSOTROS</h3>
+            </div>
+            <div class="col-md-6 resource-animation-2">
+                <h3>TELÉFONOS</h3>
+                <div class="phones">
+                    <i class="fab fa-whatsapp fa-5x mt-4"></i>
+                    <div class="tel-1 mt-5 mb-2">
+                        <a href="tel:+573102288984" class="lead">+57(310)2288984</a>
+                    </div>
+                    <div class="tel-1">
+                        <a href="tel:7044231" class="lead">7044231</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 resource-animation-3 mt-md-0 mt-4">
+                <h3>EMAILS</h3>
+                <div class="emails">
+                    <i class="fas fa-envelope fa-5x mt-4"></i>
+                    <p href="mailto:comercial1@pruebasysolucionescovit.com" class="lead mt-5">comercial1@pruebasysolucionescovit.com</p>
+                    <p href="mailto:comercial@pruebasysolucionescovit.com" class="lead">comercial@pruebasysolucionescovit.com</p>
+                </div>
+            </div>
+        </div> <!-- End dark -->
+        </div>
+            <div class="fixed-wrap">
+                <div class="fixed">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

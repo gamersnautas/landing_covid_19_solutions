@@ -1,0 +1,83 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+
+    <section id="services">
+        <div class="bg-services">
+            <div class="dark-overlay">
+                {% include '$navbar.html' %}
+                <div class="container h-100">
+                    <div class="row justify-content-center align-items-center h-100">
+                        <div class="container">
+                            <div class="info-tests text-center text-white">
+                                <h2>Servicios Especializados</h2>
+                                <div class="footer-bg d-flex justify-content-between align-items-center">
+                                    <div class="left" style="{% if request.path == '/services/' %}padding-left: 0;{% endif %}">
+                                        <a href="{% url 'index' %}">Home</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="profiling">
+        <div class="container">
+            <h2 class="text-center mb-4 text-uppercase">Perfilamiento del riesgo individual para los miembros de la organización:</h2>
+            <p>La posible aparición de COVID-19 puede afectar a los miembros de la organización en función del peso de los factores relacionados con la enfermedad Estos factores pueden ser la razón por la cual la enfermedad aparece en ciertas personas en lugares específicos y en un tiempo dado. Estos esquemas consideran entre otros aspectos: las características de los individuos y/o grupos de personas, los tipos de negocios, las dinámicas propias de la actividad y las posibilidades de contagio por movilidad, interacción e integrantes del círculo social, entre otros. Desarrollo fundamental que le sirve a la organización para la aplicación futura de pruebas y la elaboración de protocolos pertinentes, como ejemplos de sus potenciales usos.</p>
+            <p>NOTA: El valor depende de los objetivos de la organización.</p>
+        </div>
+    </div>
+
+    <div class="design text-white">
+        <div class="container">
+            <h2 class="text-center mb-4 text-uppercase">Diseñar un plan estadístico apropiado para la vigilancia epidemiológica de la Organización</h2>
+            <p>Incluye ajustes al tipo de prueba (molecular o serológica) que se aplicará de acuerdo con los objetivos epidemiológicos propuestos. Pueden hacer uso completo de las pruebas para labores de tamizaje donde se podrán evaluar, muestrear o anunciar operaciones o áreas menos riesgosas, optimizando así el uso de los escasos recursos financieros y logísticos.</p>
+            <p>NOTA: El valor depende de los objetivos de la organización.</p>
+        </div>
+    </div>
+
+    <div class="epidemiologic">
+        <div class="container">
+            <h2 class="text-center mb-4 text-uppercase">Diseño del modelo epidemiológico ajustado y análisis de resultados de apoyo al proceso de toma de decisiones organizacionales:</h2>
+            <p>Considera los diferentes efectos de diversas intervenciones no farmacéuticas y las actividades propias de la organización. Además de otros factores, el modelo y su visualización también consideran el impacto del espacio y el tiempo, así como los compromisos económicos y sociales relacionados con la implementación de las medidas, logrando así los escenarios y los efectos del aislamiento y el aislamiento social de las personas del mundo exterior. Implementan elementos cuantitativos clave de la toma de decisiones, tales como: identificación de factores de riesgo, determinación de la prevalencia real del virus, identificación activa de objetos infectados, monitoreo continuo de la población y riesgo de infección, y monitoreo epidemiológico. Para grupos focales y otras intervenciones no farmacológicas.</p>
+            <p>NOTA: El valor depende de los objetivos de la organización.</p>
+            <h2 class="text-center mb-4 mt-4">IMPORTANTE</h2>
+            <p>Creemos que estas acciones pueden ser útiles y complementarias para combatir de manera eficaz el COVID-19. El monitoreo epidemiológico cuantitativo respalda la toma de decisiones porque puede cuantificar el riesgo y la intensidad de la transmisión del virus, evaluando así el manejo de la organización de la pandemia y la respuesta adecuada a las operaciones seguras de la compañía.</p>
+        </div>
+    </div>
+
+    <div class="franchise">
+        <div class="container">
+            <h2 class="text-center mb-4 text-uppercase">CONSULTORÍA DE FRANQUICIAS Y MODELOS PARA AMÉRICA LATINA</h2>
+            <p>Orientamos a personas naturales y juridicas para que establezca un servicio comercial para llevar a cabo el desarrollo de Prueba Rápida ó Serológica y Prueba Reacción en Cadena de la Polimerasa -PCR (Polymerase Chain Reaction Test). Compartimos un modelo de negocio para evaluar los servicios de programación de la empresa.</p>
+            <h2 class="text-center text-uppercase mb-4 mt-4">PLAN DE PAGOS</h2>
+            <p>Ofrecemos un plan de comisiones para cada cliente de referencia en Colombia. Póngase en contacto con nuestra empresa para conocer nuestro plan de comisiones.</p>
+        </div>
+    </div>
+
+    <div class="wash-hands text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">PASOS PARA LAVARSE LAS MANOS DE LA FORMA CORRECTA</h2>
+            <p>Lavarse las manos es fácil, y es una de las formas más eficaces de prevenir la propagación de microbios. Las manos limpias pueden detener la propagación de microbios de una persona a otra y dentro de toda una comunidad; esto incluye su hogar, su lugar de trabajo, establecimientos de cuidado infantil y hospitales.</p>
+            <p>Siga siempre estos cinco pasos:</p>
+            <ul class="list-unstyled">
+                <li>1. <strong>Mójese</strong> las manos con agua corriente limpia (tibia o fría), cierre el grifo y enjabónese las manos.</li>
+                <li>2. <strong>Frótese</strong> las manos con el jabón hasta que haga espuma. Frótese la espuma por el dorso de las manos, entre los dedos y debajo de las uñas.</li>
+                <li>3. <strong>Restriéguese</strong> las manos durante al menos 20 segundos. ¿Necesita algo para medir el tiempo? Tararee dos veces la canción de “Feliz cumpleaños” de principio a fin.</li>
+                <li>4. <strong>Enjuáguese</strong> bien las manos con agua corriente limpia.</li>
+                <li>5. <strong>Séqueselas</strong> con una toalla limpia o al aire.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="important">
+        <div class="container">
+            
+        </div>
+    </div>
+
+{% endblock content %}
