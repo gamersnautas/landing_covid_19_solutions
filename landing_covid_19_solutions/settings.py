@@ -28,7 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'http://pruebasysolucionescovit.com',
     'www.pruebasysolucionescovit.com',
-    'pruebasysolucionescovit.com'
+    'pruebasysolucionescovit.com',
+    '127.0.0.1'
 ]
 
 
